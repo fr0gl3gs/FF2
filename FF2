@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Poog foogs FF2", "Midnight")
+local Window = Library.CreateLib("Poog foogs FF2 Sub to Poog Foog for more", "Midnight")
 
 -- MAIN
 local Main = Window:NewTab("Main")
