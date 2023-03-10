@@ -100,7 +100,7 @@ MainSection:NewButton("Ball predictions", "ButtonInfo", function()
 	
 	do
 		workspace.ChildAdded:Connect(function(child)
-			if child.Name == "Football" and child:IsA("BasePart") and Variables.CatchingTab.Flags["Grapher_Enabled"] then
+			if child.Name == "Football" and child:IsA("BasePart")  then
 				local tempCon; tempCon = child:GetPropertyChangedSignal("Velocity"):Connect(function()
 					Grapher:GetLanding(child.Position, child.Velocity, child)
 					tempCon:Disconnect()
@@ -484,5 +484,3 @@ MainSection:NewButton(" Undetected Speed gui", "ButtonInfo", function()
     
     ui:Ready()
 end)
-
-
