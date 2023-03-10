@@ -35,13 +35,11 @@ end)
 
 
 
-MainSection:NewToggle("Grapher", "ToggleInfo", function(state)
-    if state then
-        local Grapher = {}
+
 
         --// UI Setup
         do
-            local GrapherSection = Variables.CatchingTab:AddSection("Grapher")
+            local GrapherSection = Variables.MainTab:AddSection("Grapher")
             GrapherSection:AddToggle("Enabled", {flag = "Grapher_Enabled"}, function() end)
         end
         
