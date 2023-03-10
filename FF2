@@ -1,7 +1,7 @@
 --POOG FOOG
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Poog foogs FF2 Sub to Poog Foog for more", "Midnight")
+local Window = Library.CreateLib("Poog foogs FF2 Sub to Poog Foog for more", "Serpent")
 
 -- MAIN
 local Main = Window:NewTab("Main")
@@ -37,7 +37,7 @@ MainSection:NewButton("Ball predictions", "ButtonInfo", function()
 	
 	Grapher.Marker = Instance.new("Part")
 	Grapher.Marker.Anchored = true
-	Grapher.Marker.Transparency = .8
+	Grapher.Marker.Transparency = 1
 	Grapher.Marker.Color = Color3.fromRGB(255, 0, 255)
 	Grapher.Marker.CanCollide = false
 	Grapher.Marker.Name = "Marker"
@@ -76,7 +76,7 @@ MainSection:NewButton("Ball predictions", "ButtonInfo", function()
 		local Football_Highlight;
 	
 		if c then
-			Football_Highlight = Instance.new("Highlight", game.CoreGui)
+			Football_Highlight = Instance.new
 			Football_Highlight.Adornee = c 
 			Football_Highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
 			Football_Highlight.Enabled = true  
@@ -484,3 +484,5 @@ MainSection:NewButton(" Undetected Speed gui", "ButtonInfo", function()
     
     ui:Ready()
 end)
+
+
