@@ -151,15 +151,14 @@ end)
 
 
 
-MainSection:NewSlider("TP speed", "SliderInfo", 0.9, 0.1, function(s) -- 500 (MaxValue) | 0 (MinValue)
+MainSection:NewSlider("TP speed", "SliderInfo", 1, 0.1, function(s) 
     local Player = game:GetService'Players'.LocalPlayer;
 local UIS = game:GetService'UserInputService';
 UIS.InputBegan:connect(function(UserInput)
         if UserInput.UserInputType == Enum.UserInputType.Keyboard and UserInput.KeyCode == Enum.KeyCode.F then
             _G.Running = true
-                while wait(0.009) and _G.Running == true do
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 0.4
-
+                while wait(0.009) and _G.Running == true do
 end
         end
 end)
@@ -524,5 +523,3 @@ MainSection:NewButton(" Undetected Speed gui", "ButtonInfo", function()
     
     ui:Ready()
 end)
-
-
