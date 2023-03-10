@@ -37,7 +37,7 @@ MainSection:NewButton("Ball predictions", "ButtonInfo", function()
 	
 	Grapher.Marker = Instance.new("Part")
 	Grapher.Marker.Anchored = true
-	Grapher.Marker.Transparency = 1
+	Grapher.Marker.Transparency = 2
 	Grapher.Marker.Color = Color3.fromRGB(255, 0, 255)
 	Grapher.Marker.CanCollide = false
 	Grapher.Marker.Name = "Marker"
