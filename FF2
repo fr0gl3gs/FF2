@@ -444,7 +444,7 @@ MainSection:NewButton(" Undetected Speed gui", "ButtonInfo", function()
     
     local m = w:NewMenu('speed')
     local t = m:NewToggle('toggle speed')
-    local s = m:NewSlider('speed amount',0.5,20,5)
+    local s = m:NewSlider('speed amount',0.3,20,5)
     
     t:SetTooltip("toggles speedhacks")
     s:SetTooltip("speedhack speed")
