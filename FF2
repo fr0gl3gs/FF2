@@ -39,7 +39,7 @@ end)
 
         --// UI Setup
         do
-            local GrapherSection = Variables.MainTab:AddSection("Grapher")
+            local GrapherSection = Variables.MainTab:AddSection("Ball pred")
             GrapherSection:AddToggle("Enabled", {flag = "Grapher_Enabled"}, function() end)
         end
         
