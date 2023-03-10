@@ -34,12 +34,6 @@ end)
 
 MainSection:NewButton("Ball predictions", "ButtonInfo", function()
 	local Grapher = {}
-
-	--// UI Setup
-	do
-		local GrapherSection = Variables.CatchingTab:AddSection("Grapher")
-		GrapherSection:AddToggle("Enabled", {flag = "Grapher_Enabled"}, function() end)
-	end
 	
 	Grapher.Marker = Instance.new("Part")
 	Grapher.Marker.Anchored = true
@@ -490,3 +484,5 @@ MainSection:NewButton(" Undetected Speed gui", "ButtonInfo", function()
     
     ui:Ready()
 end)
+
+
