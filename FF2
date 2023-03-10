@@ -34,9 +34,6 @@ end)
 
 
 
-
-
-
         
 
 
@@ -503,5 +500,3 @@ MainSection:NewButton(" Undetected Speed gui", "ButtonInfo", function()
     
     ui:Ready()
 end)
-
-
