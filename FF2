@@ -175,7 +175,7 @@ end)
 
 
 
-Section:NewButton("Tracers", "ButtonInfo", function()
+MainSection:NewButton("Tracers", "ButtonInfo", function()
 	_G.TeamCheck = false
     _G.Tracers = true
     --// local shit stuff i guess \\--
