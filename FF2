@@ -151,7 +151,7 @@ end)
 
 
 
-MainSection:NewSlider("SliderText", "SliderInfo", 3, 0.4, function(s) -- 500 (MaxValue) | 0 (MinValue)
+MainSection:NewSlider("TP speed", "SliderInfo", 0.9, 0.1, function(s) -- 500 (MaxValue) | 0 (MinValue)
     local Player = game:GetService'Players'.LocalPlayer;
 local UIS = game:GetService'UserInputService';
 UIS.InputBegan:connect(function(UserInput)
@@ -524,3 +524,5 @@ MainSection:NewButton(" Undetected Speed gui", "ButtonInfo", function()
     
     ui:Ready()
 end)
+
+
