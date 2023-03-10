@@ -151,13 +151,13 @@ end)
 
 
 
-MainSection:NewSlider("TP speed", "SliderInfo", 20, 0.1, function(s) 
+MainSection:NewSlider("TP speed", "SliderInfo", 2, 0.5, function(s) 
     local Player = game:GetService'Players'.LocalPlayer;
 local UIS = game:GetService'UserInputService';
 UIS.InputBegan:connect(function(UserInput)
         if UserInput.UserInputType == Enum.UserInputType.Keyboard and UserInput.KeyCode == Enum.KeyCode.F then
             _G.Running = true
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = * 0.4
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = * s 
                 while wait(0.009) and _G.Running == true do
 end
         end
