@@ -593,7 +593,7 @@ local settings_tbl = {
     ESP_TeamCheck = false,
     Chams = true,
     Chams_Color = Color3.fromRGB(255,0,255),
-    Chams_Transparency = 0.1,
+    Chams_Transparency = 1,
     Chams_Glow_Color = Color3.fromRGB(255,0,255)
 }
 
@@ -659,7 +659,7 @@ dwRunService.Heartbeat:Connect(function()
                                         glow_box.ZIndex = 3 
                                         glow_box.Adornee = b 
                                         glow_box.Color3 = settings_tbl.Chams_Glow_Color
-                                        glow_box.Size = chams_box.Size + Vector3.new(0.13, 0.13, 0.13)
+                                        glow_box.Size = chams_box.Size + Vector3.new(0.09, 0.09, 0.09)
 
                                     end
 
