@@ -456,7 +456,7 @@ MainSection:NewButton(" Undetected Speed gui", "ButtonInfo", function()
     local t = m:NewToggle('toggle speed')
     local s = m:NewSlider('speed amount',0.3,20,5)
     
-    t:SetTooltip("toggles speedhacks")
+    t:SetTooltip("made special for bwiz")
     s:SetTooltip("speedhack speed")
     
     m:NewLabel()
@@ -499,4 +499,18 @@ MainSection:NewButton(" Undetected Speed gui", "ButtonInfo", function()
     end)
     
     ui:Ready()
+end)
+
+
+
+
+
+
+
+
+
+
+
+MainSection:NewButton("INF jump", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fr0gl3gs/infjump/main/inf"))()
 end)
