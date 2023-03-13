@@ -593,7 +593,7 @@ local settings_tbl = {
     ESP_TeamCheck = false,
     Chams = true,
     Chams_Color = Color3.fromRGB(255,0,255),
-    Chams_Transparency = 1,
+    Chams_Transparency = 4,
     Chams_Glow_Color = Color3.fromRGB(255,0,255)
 }
 
@@ -637,7 +637,7 @@ dwRunService.Heartbeat:Connect(function()
                         for k,b in next, char:GetChildren() do 
 
                             if b:IsA("BasePart") and 
-                            b.Transparency ~= 2 then
+                            b.Transparency ~= 1 then
                                 
                                 if settings_tbl.Chams then
 
